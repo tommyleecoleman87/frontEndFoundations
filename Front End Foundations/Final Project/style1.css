@@ -30,6 +30,7 @@ html {
 .main-container {
     display: flex;
     justify-content: center;
+    color: darkblue;
 }
 
 ul {
@@ -69,6 +70,7 @@ h2 {
     width: 50px;
     height: 50px;
     background: darkblue;
+    color: white;
 }
 
 .greyTheme {
@@ -95,7 +97,7 @@ a {
 }
 
 a:hover {
-    color: yellowgreen;
+    color: coral;
     font-weight: bold;
 }
 
