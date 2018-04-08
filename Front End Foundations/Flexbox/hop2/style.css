@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-container {
+    display: flex;
+    justify-content: center
+}
+
+.header {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-item {
+    border: 1px solid black;
+    width: 80px;
+    text-align: center;
+}
+
+.main-container {
+    background: black;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+
+}
+
+.mini-container {
+    width: 100px;
+    background: greenyellow;
+}

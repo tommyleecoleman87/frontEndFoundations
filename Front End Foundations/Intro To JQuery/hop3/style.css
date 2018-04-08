@@ -1,0 +1,28 @@
+.things {
+    color: green;
+}
+
+.stuff {
+    color: orange;
+}
+
+#firstDiv {
+    width: 400px;
+    height: 400px;
+    background: grey;
+}
+
+#secondDiv {
+    width: 400px;
+    height: 400px;
+    background: grey;
+}
+
+h1 {
+    color: white;
+}
+
+#error {
+    font-size: 10em;
+    color: white;
+}
