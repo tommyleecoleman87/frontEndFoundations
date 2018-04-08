@@ -3,6 +3,7 @@
     <header>
         <title>Final Project, Front End Foundations</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+         
         <script
 			  src="https://code.jquery.com/jquery-3.3.1.js"
 			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -11,20 +12,35 @@
 
     <body>
         <div class="header">
-            <h1>Tommy Coleman, Fullstack Developer Student</h1>
-            <img src="profile.jpg" class="profile-pic"/>
+            <div>
+            <h1>Tommy Coleman</h1>
+            <h2>Fullstack Developer</h2>
+            </div>
+            <div>
+            <img src="profile.jpg" class="profile-pic" onclick="consoleApi()"/>
+            </div>
         </div>
 
         <div class="main-container">
             <div class="skills">
                 <h2>Skill Sets:</h2>
+                <div>
+                    <ul>
+                        <li>Working Knowledge of HTMl</li>
+                        <li>Working Knowledge of CSS</li>
+                        <li>Knowledge of Javascript foundations</li>
+                        <li>Brief experience in Flexbox</li>
+                        <li>Brief experience in React</li>
+                        <li>Brief experience in LESS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="repos">
+                <h2>GitHub Repos:</h2>
                 <ul>
-                    <li>Working Knowledge of HTMl</li>
-                    <li>Working Knowledge of CSS</li>
-                    <li>Knowledge of Javascript foundations</li>
-                    <li>Brief experience in Flexbox</li>
-                    <li>Brief experience in React</li>
-                    <li>Brief experience in LESS</li>
+                    <li><a href="https://github.com/tommyleecoleman87/frontEndFoundations" target="_blank">Front End Foundations</a></li>
+                    <li>Coming soon..</li>
+                    <li>Coming soon..</li>
                 </ul>
             </div>
 
@@ -34,11 +50,26 @@
 
     <footer>
         <div class="footer">
-           <h4>Contact Me</h4>
-           <a href="mailto:tommyleecoleman87@gmail.com"><img src="emailicon.jpg" class="icons"/></a>
-           <a href="https://github.com/tommyleecoleman87" target="_blank"><img src="GitHub-Mark.png" class="icons"/></a>
-           <a href="https://www.linkedin.com/in/tommyleecoleman87/" target="_blank"><img src="linkicon.png" class="icons"/></a>
+            <div>
+                <h4>Contact Me</h4>
+                <a href="mailto:tommyleecoleman87@gmail.com"><img src="emailicon.jpg" class="icons"/></a>
+                <a href="https://github.com/tommyleecoleman87" target="_blank"><img src="GitHub-Mark.png" class="icons"/></a>
+                <a href="https://www.linkedin.com/in/tommyleecoleman87/" target="_blank"><img src="linkicon.png" class="icons"/></a>
+            </div>
+            <div class="themes">
+                <h5>Themes:</h5>
+                <div class="themeRow">
+                    <div class="btn1">
+                        <button class="greyTheme icons">Grey Theme</button>
+                    </div>
+                    <div class="btn2">
+                        <button class="blueTheme icons">Blue Theme</button>
+                    </div>
+                </div>
+            </div>
+            
         </div>
+        
     </footer>
 </html>
 
