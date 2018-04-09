@@ -17,6 +17,8 @@ function loadRepo(url, callback) {
           }
       }
       // Don't forget the callback()
+      gitHubRequest.open('GET', url, true);
+      gitHubRequest.send();
   }
   
   function loadRepoCallback(gitHubRequest) {
@@ -26,6 +28,21 @@ function loadRepo(url, callback) {
     // Using the DOM create new list elements
     // Plug in the .html_url and .name from the parsed object.  To make this a link you'll need 
     // Append the new list items to the element you retrieved from HTML
+    let gitHubUser = JSON.parse(gitHubRequest.responseText);
+    gitHubUser.forEach(item => {
+        console.log(item.name);
+        let newLi = document.createElement('li');
+        let newA = document.createElement('a')
+        newAttribute = document.createAttribute('href');
+        newAttribute2 = document.createAttribute('target');
+        newAttribute2.value = "_blank";
+        newAttribute.value = item.html_url;
+        newA.setAttributeNode(newAttribute);
+        newA.setAttributeNode(newAttribute2);
+    
+
+        document.getElementById('repoList').appendChild(newLi).appendChild(newA).innerHTML = item.name;
+    })
   }
 
 $(document).ready(function(){

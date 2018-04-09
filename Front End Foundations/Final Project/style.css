@@ -106,3 +106,7 @@ a:hover {
 a:visited {
     text-decoration: none;
 }
+
+.loadReposButton {
+    background: slategray;
+}

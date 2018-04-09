@@ -38,10 +38,9 @@
             </div>
             <div class="repos">
                 <h2>GitHub Repos:</h2>
-                <ul>
-                    <li><a href="https://github.com/tommyleecoleman87/frontEndFoundations" target="_blank">Front End Foundations</a></li>
-                    <li>Coming soon..</li>
-                    <li>Coming soon..</li>
+                <button class="loadReposButton" onclick="loadRepo('https://api.github.com/users/tommyleecoleman87/repos', loadRepoCallback)">Click for Repos!</button>
+                <ul id="repoList">
+                    
                 </ul>
             </div>
 
